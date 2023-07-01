@@ -26,5 +26,5 @@ strcpy(dst, src); // work properly
 > When you call `free` more than once on the same memory. The MAL might get confused by this and sometimes crash your program or do other weird things. One tactic would be to set your pointers to `NULL` after you freed them.
 
 > [!bug] Invalid frees
-> When you call `free` with something that is not a pointer or e.g. the middle of an array. These error is dangerous.
+> When you call `free` with something that is not a pointer or e.g. the middle of an array. This error is dangerous.
 
