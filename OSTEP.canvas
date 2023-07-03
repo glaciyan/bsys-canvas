@@ -181,7 +181,8 @@
 		{"type":"text","text":"# Sharing Memory\n\nThis is very useful for **code sharing**.\n\nTo support sharing we need to add **protection bits**, they indicate whether or not a program can read, write or execute memory in a segment.\n\nWhen a code segment is set to **read-execute-only** multiple processes can run that code while each process still thinks that it is accessing its own private memory.","id":"ca20f6b9245bae4d","x":13188,"y":1220,"width":562,"height":317},
 		{"type":"text","text":"# Free List Algorithm\n\nFree-list management is a memory allocation technique that maintains **a list of available memory blocks,** or \"free-list,\" for use by programs that request memory allocation. The allocator **searches the free-list for a block of memory that is the appropriate size** to fulfill the request.\n\nSome algorithms are best-fit, worst-fit, first-fit, buddy algorithm,... and many more. There is no great solution for this problem. Those algorithms just minimize it.","id":"66214e9b372b8cd1","x":13312,"y":150,"width":506,"height":333},
 		{"type":"text","text":"## Internal Fragmentation\n\nWhen inside the address space we have unused memory.","id":"31b61ed25585201a","x":13653,"y":637,"width":437,"height":180},
-		{"type":"text","text":"# Splitting\n\nWhen you take memory from a large block, you don't take the whole thing, just a small part of it.","id":"26097e3fc488592d","x":13740,"y":1620,"width":334,"height":174}
+		{"type":"text","text":"# Splitting\n\nWhen you take memory from a large block, you don't take the whole thing, just a small part of it.","id":"26097e3fc488592d","x":13740,"y":1620,"width":334,"height":174},
+		{"id":"c956ae09f7321842","x":2960,"y":6473,"width":565,"height":247,"type":"file","file":"Notes/Virtualization/Process/Scheduler/Queues can have different time allotments.md"}
 	],
 	"edges":[
 		{"id":"0ec1a2c6ed31c6cb","fromNode":"07d57b69a726b53e","fromSide":"bottom","toNode":"f1428a4c919dc493","toSide":"top","toEnd":"none"},
@@ -370,6 +371,7 @@
 		{"id":"c7bb8b88ef962126","fromNode":"ded38139fde28736","fromSide":"left","toNode":"7753127ed80322a8","toSide":"right"},
 		{"id":"930e21a4fe34adc0","fromNode":"ded38139fde28736","fromSide":"bottom","toNode":"92e3e91985959c8f","toSide":"top"},
 		{"id":"1eebc600585e0134","fromNode":"fb879da5ddf35192","fromSide":"bottom","toNode":"d0ef0aa4ecee91a1","toSide":"right"},
-		{"id":"1e39cf6be41e47c5","fromNode":"402c2f357ef937d5","fromSide":"right","toNode":"d0ef0aa4ecee91a1","toSide":"top"}
+		{"id":"1e39cf6be41e47c5","fromNode":"402c2f357ef937d5","fromSide":"right","toNode":"d0ef0aa4ecee91a1","toSide":"top"},
+		{"id":"04b72494e63e03c5","fromNode":"8c1490f20de1e1ff","fromSide":"left","toNode":"c956ae09f7321842","toSide":"right"}
 	]
 }
